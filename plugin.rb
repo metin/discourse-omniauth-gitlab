@@ -4,7 +4,7 @@
 # author: Achilleas Pipinellis
 # url: https://gitlab.com/gitlab-org/discourse-omniauth-gitlab
 
-gem 'omniauth-gitlab', '1.0.2'
+gem 'omniauth-gitlab', '1.0.2', {require: false }
 
 class GitLabAuthenticator < ::Auth::Authenticator
 
