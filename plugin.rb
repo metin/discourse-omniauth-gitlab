@@ -3,16 +3,16 @@
 # version: 0.0.3
 # author: Achilleas Pipinellis
 # url: https://gitlab.com/gitlab-org/discourse-omniauth-gitlab
-gem 'rack', '2.0.1'
-gem 'omniauth', '1.3.1'
-gem 'multipart-post', '2.0.0'
-gem 'faraday', '0.10.1'
-gem 'jwt', '1.5.6'
-gem 'multi_json', '1.12.1'
-gem 'multi_xml', '0.6.0'
-gem 'oauth2', '1.3.0'
-gem 'omniauth-oauth2', '1.4.0'
-gem 'omniauth-gitlab', '1.0.2'
+gem 'rack', '~> 2.0.0'
+gem 'omniauth', '~> 1.3.0'
+gem 'multipart-post', '~> 2.0.0'
+gem 'faraday', '~> 0.10.0'
+gem 'jwt', '~> 1.5.0'
+gem 'multi_json', '~> 1.12.0'
+gem 'multi_xml', '~> 0.6.0'
+gem 'oauth2', '~> 1.3.0'
+gem 'omniauth-oauth2', '~> 1.4.0'
+gem 'omniauth-gitlab', '~> 1.0.2'
 
 class GitLabAuthenticator < ::Auth::Authenticator
 
