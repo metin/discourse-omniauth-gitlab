@@ -56,6 +56,8 @@ class GitLabAuthenticator < ::Auth::Authenticator
 
   def after_create_account(user, auth)
     data = auth[:extra_data]
+    user.activate
+    user.approve(1);
     ::PluginStore.set("gl", "gl_uid_#{data[:gl_uid]}", {user_id: user.id })
   end
 
