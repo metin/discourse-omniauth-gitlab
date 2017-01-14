@@ -21,7 +21,7 @@ class GitLabAuthenticator < ::Auth::Authenticator
   GITLAB_SECRET = ENV['GITLAB_SECRET']
 
   def name
-    'gitlab'
+    'SSO'
   end
 
   def after_authenticate(auth_token)
@@ -73,8 +73,8 @@ class GitLabAuthenticator < ::Auth::Authenticator
 end
 
 
-auth_provider title: 'with GitLab',
-    message: 'Log in via GitLab (Make sure pop up blockers are not enabled).',
+auth_provider title: 'with SSO',
+    message: 'Log in via SSO (Make sure pop up blockers are not enabled).',
     frame_width: 920,
     frame_height: 800,
     authenticator: GitLabAuthenticator.new
