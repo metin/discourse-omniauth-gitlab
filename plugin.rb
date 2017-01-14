@@ -21,7 +21,7 @@ class GitLabAuthenticator < ::Auth::Authenticator
   GITLAB_SECRET = ENV['GITLAB_SECRET']
 
   def name
-    'SSO'
+    'gitlab'
   end
 
   def after_authenticate(auth_token)
